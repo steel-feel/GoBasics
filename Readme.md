@@ -4,9 +4,7 @@
 
  freeCodeCamp [youtube tutorial](https://www.youtube.com/results?search_query=go+language+tutorial)
 
- ## List of Projects
-[x] Variables
-
-[x] Primitive
- 
-[ ] Constants 
+ ## List of Learning
+- [x] Variables
+- [x] Primitive
+- [ ] Constants 
