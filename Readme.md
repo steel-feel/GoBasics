@@ -1,3 +1,5 @@
 # Go lang Basics tuturial practice & projects
 
-Link to freeCodeCamp [youtube tutorial](https://www.youtube.com/results?search_query=go+language+tutorial)
+> Go version : 1.17.1
+
+ freeCodeCamp [youtube tutorial](https://www.youtube.com/results?search_query=go+language+tutorial)
