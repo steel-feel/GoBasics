@@ -1,4 +1,4 @@
-# Go lang Basics tuturial practice & projects
+# Go lang Basics tutorial practice & projects
 
 > Go version : 1.17.1
 
