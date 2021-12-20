@@ -4,7 +4,9 @@
 
  freeCodeCamp [youtube tutorial](https://www.youtube.com/results?search_query=go+language+tutorial)
 
- ## List of Learning
+ ## List of Learnings
+
 - [x] Variables
 - [x] Primitive
-- [ ] Constants 
+- [x] Constants 
+- [ ] Arrays and Slices 
