@@ -9,4 +9,5 @@
 - [x] Variables
 - [x] Primitive
 - [x] Constants 
-- [ ] Arrays and Slices 
+- [x] Arrays and Slices 
+- [ ] Maps and Structs
