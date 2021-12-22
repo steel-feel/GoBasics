@@ -10,4 +10,5 @@
 - [x] Primitive
 - [x] Constants 
 - [x] Arrays and Slices 
-- [ ] Maps and Structs
+- [x] Maps and Structs
+- [ ] Control flows
