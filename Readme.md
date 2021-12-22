@@ -2,7 +2,7 @@
 
 > Go version : 1.17.1
 
- freeCodeCamp [youtube tutorial](https://www.youtube.com/watch?v=YS4e4q9oBaU&t=7s)
+ FreeCodeCamp [youtube tutorial](https://www.youtube.com/watch?v=YS4e4q9oBaU&t=7s)
 
  ## List of Learnings
 
