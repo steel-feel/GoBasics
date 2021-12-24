@@ -5,34 +5,46 @@ import (
 )
 
 func main() {
-	a := 10
-
-	//~~~~~~~~~ if else if ~~~~~~~~~~
-	if a > 5 {
-		fmt.Println("a is greater than 5")
-	} else if a < 10 {
-		fmt.Println("a is less than 10")
-	} else {
-		fmt.Println("a is less than 5 and greater than 10")
-	}
-
-	//with intialization
-	if b := 10; b > 5 {
-		fmt.Println("b is greater than 5")
-	} else {
-		fmt.Println("b is less than 5")
-	}
-
-	//OR operator can short circuit
-	if a > 5 || a < 10 {
-		//second condition is not executed
-		fmt.Println("a is greater than 5 or less than 10")
-	}
+	
+	//~~~~~~ if-else block ~~~~~~
+	//	ifandElse();
 
 
 	//~~~~~~~~~ switch ~~~~~~~~~~
-	
+	// switchBlock()
 
+	//~~~~~~ for loop ~~~~~~
+	//control flow with for loop
+	forLoop();
+
+}
+
+func ifandElse(){
+		a := 10
+		//~~~~~~~~~ if else if ~~~~~~~~~~
+		if a > 5 {
+			fmt.Println("a is greater than 5")
+		} else if a < 10 {
+			fmt.Println("a is less than 10")
+		} else {
+			fmt.Println("a is less than 5 and greater than 10")
+		}
+	
+		//with intialization
+		if b := 10; b > 5 {
+			fmt.Println("b is greater than 5")
+		} else {
+			fmt.Println("b is less than 5")
+		}
+	
+		//OR operator can short circuit
+		if a > 5 || a < 10 {
+			//second condition is not executed
+			fmt.Println("a is greater than 5 or less than 10")
+		}
+}
+
+func switchBlock(){
 	//with initializer syntax, variable scope limited, mutliple cases can be clumped together
 	switch	c := 1 ; c {
 	case 1,2,3:
@@ -54,13 +66,11 @@ func main() {
 	default:
 		fmt.Println("fruit is neither apple nor banana")
 	}
-
-	//fallthrough and breaks
+	//~~~~~fallthrough and breaks~~~~~
 	fallthroughbreaks();
-	
-	//type switches, for checking type of variable
-	typeSwitches();
 
+	// type switches, for checking type of variable
+	typeSwitches();
 }
 
 func fallthroughbreaks(){
@@ -68,6 +78,7 @@ func fallthroughbreaks(){
 	switch {
 	case num > 0:
 		fmt.Println("num is positive")
+		//will fall through to next case, without checking the condition
 		fallthrough	
 	case num > 1:
 		if num < 5 {
@@ -81,7 +92,6 @@ func fallthroughbreaks(){
 }
 
 func typeSwitches(){
-
 	var x interface{} = "hello"
 	switch x.(type) {
 	case int:
@@ -91,4 +101,35 @@ func typeSwitches(){
 	default:
 		fmt.Println("x is of a different type")
 	}
+}
+
+func forLoop(){
+	//for loop like javascript, also break and continue
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+	}
+
+	//like while loop
+	for {
+		fmt.Println("infinite loop aka while loop")
+		break
+	}
+
+	
+	//Labels
+StartHere: 
+	
+	for i := 0; i < 10; i++ {
+		fmt.Println(i)
+			if i == 5 {
+				break StartHere
+			}
+		}
+
+	//Loops for collections
+	students := [...]string{"john", "jane", "joe"}
+	for i, name := range students {
+		fmt.Println(i, name)
+	}
+
 }
