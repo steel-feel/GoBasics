@@ -11,4 +11,5 @@
 - [x] Constants 
 - [x] Arrays and Slices 
 - [x] Maps and Structs
-- [ ] Control flows
+- [x] Control flows
+- [ ] Pointers
