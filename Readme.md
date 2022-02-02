@@ -12,4 +12,4 @@
 - [x] Arrays and Slices 
 - [x] Maps and Structs
 - [x] Control flows
-- [ ] Pointers
+- [x] Pointers
