@@ -41,7 +41,20 @@ func main(){
 	var n string = strconv.FormatFloat(k,'f',2,64);
 	fmt.Printf("%v , %T\n", n,n);
 
+	// Type conversion should be done explicitly if named type is different, 
+	// stands true for struct as well
+	TypeConversion()
 
+}
+
+func TypeConversion(){
+	var a uint ;
+	var b int ;
+
+	//will cause issue if not explicitly converted
+	// a = b;
+
+	fmt.Printf("%v %v \n",a,b)
 }
 
 
