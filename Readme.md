@@ -12,4 +12,7 @@
 - [x] Arrays and Slices 
 - [x] Maps and Structs
 - [x] Control flows
-- [x] Pointers
+- [x] Pointer
+- [ ] Function
+- [ ] Interfaces
+- [ ] Go Routines
