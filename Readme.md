@@ -6,12 +6,12 @@
 
  ## List of Learnings
 
-- [x] Variables
+- [x] Variable
 - [x] Primitive
 - [x] Constants 
-- [x] Arrays and Slices 
-- [x] Maps and Structs
-- [x] Control flows
+- [x] Arrays and Slice
+- [x] Maps and Struct
+- [x] Control flow
 - [x] Pointer
 - [ ] Function
 - [ ] Interfaces
