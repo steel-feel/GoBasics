@@ -9,7 +9,8 @@ const a string = "hello";
 
 //iota example, enumerated constants
 const (
-	//ignoring the first value
+	//ignoring the first value, 
+	// and starting from 1
 	_ = iota;
 	mango 
 	orange
@@ -20,6 +21,10 @@ const (
 
 const (
 	//enumerated expression
+	// shifting 1 bytewise to right
+	//for first 1 << shifted by 0
+	// second time 1 << shifted by 1, that became 10
+	// third time 1 << shifted by 2, that became 100
 	isAdmin = 1 << iota
 	isDeveloper
 	isManager
@@ -59,6 +64,8 @@ func iotaExample(){
 func iotaroles(){
 	var role byte = isAdmin | isDeveloper;
 	fmt.Printf("%b \n", role);
+
+	// fmt.Printf("%b \n", isManager);
 
 	//Check if role is Manager
 	fmt.Printf("Has Manager access: %v \n" , ( isManager & role == isManager) );
