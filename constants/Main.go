@@ -35,12 +35,18 @@ const (
 
 func main() {
 	//constant should be initalized with compile time value, 
-	// not runtime value
-	const a = 10;
+	// not runtime value,
+	//const without type is implicitly converted to kind
+
+	const a  = 10;
 	var b int16 = 4;
 	var c int32 = 7
 
+
+	fmt.Printf("%T \n", a);
+
 	//constants type has been inferred based on the action
+
 
 	fmt.Printf("%d, %T\n", a+b, a+b);
 	 fmt.Printf("%d, %T\n", a+c, a+c);
@@ -54,6 +60,11 @@ func main() {
 
 	//IOTA implementation
 	iotaroles();
+
+	//high precision constants, they have range to 256 bits
+	const e = 1234567890123412345678901234;
+
+	//fmt.Printf("%v\n", e);
 
 }
 
